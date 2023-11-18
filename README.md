@@ -36,6 +36,7 @@ To get started with our project, follow these simple steps:
 ## Meet the Team 👥
 
 - AliMoradi (@AliDeWeb)
+- Mahsa (@MahsaCode)
 
 ## Feedback 🌐
 
