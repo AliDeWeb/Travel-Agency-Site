@@ -7,14 +7,61 @@
     <link rel="stylesheet" href="./styles/about_us.css" />
     <script src="./scripts/about_us.js" defer></script>
   </head>
-  <body>
-    <header class="py-5 bg-gradient-to-r from-purple-900 to-purple-800">
+  <body class="overflow-x-hidden">
+    <svg class="hidden">
+      <symbol
+        id="bars3"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </symbol>
+      <symbol
+        id="x-mark"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </symbol>
+      <symbol
+        id="question-mark-circle"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+        />
+      </symbol>
+    </svg>
+    <header
+      class="py-5 bg-gradient-to-r from-purple-900 to-purple-800 relative"
+    >
       <div class="container">
         <div class="flex items-center justify-between">
-          <div class="w-[120px] h-20">
+          <div class="w-[80px] h-16 sm:w-[120px] sm:h-20 flex items-center">
             <img src="./files/imgs/about_us_imgs/logo.png" alt="site_logo" />
           </div>
-          <nav>
+          <nav class="hidden lg:block">
             <ul
               class="flex items-center gap-x-7 text-base child:font-avenirNext child:text-white"
             >
@@ -26,13 +73,54 @@
               <li><a href="#">Contact us</a></li>
             </ul>
           </nav>
-          <div
-            class="font-Montserrat-semi text-xl text-purple-800 bg-yellow-200 px-6 py-[15px] rounded-4xl "
-          >
-            <a href="#">Get in touch</a>
+          <div class="flex items-center gap-[40px]">
+            <div
+              class="hidden sm:block font-Montserrat-semi text-base lg:text-xl text-purple-800 bg-yellow-200 px-5 lg:px-6 py-3 lg:py-[15px] rounded-4xl"
+            >
+              <a href="#">Get in touch</a>
+            </div>
+            <div class="block lg:hidden">
+              <svg
+                class="mobile-nav-toggler text-white w-14 h-[42px] cursor-pointer"
+              >
+                <use href="#bars3"></use>
+              </svg>
+              <div
+                class="mobile-navbar transition-all duration-300 absolute top-0 -right-[300px] h-screen bg-yellow-200 w-[300px] px-8 py-4 z-[999]"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <svg class="mobile-nav-toggler w-11 h-11 cursor-pointer">
+                      <use href="#x-mark"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <svg class="w-11 h-11 cursor-pointer">
+                      <use href="#question-mark-circle"></use>
+                    </svg>
+                  </div>
+                </div>
+                <hr class="my-6 bg-purple-900" />
+                <ul
+                  class="flex flex-col items-start gap-y-7 text-base sm:text-xl child:font-avenirNext child:text-black child:before:transition-all child:relative child:pl-4 child:before:content-[''] child:before:h-1 child:before:w-0 child-hover:before:w-3 child:before:bg-purple-900 child:before:absolute child:before:top-0 child:before:bottom-0 child:before:left-0 child:before:my-auto child:before:rounded-md"
+                >
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Invest in cyprus</a></li>
+                  <li><a href="#">migration</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
+
+    <div
+      id="overlay"
+      class="hidden fixed top-0 bottom-0 right-0 left-0 h-screen w-full bg-black/50 z-[99]"
+    ></div>
   </body>
 </html>
