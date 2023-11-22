@@ -590,6 +590,11 @@ video {
   }
 }
 
+:root {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
 textarea {
   resize: none;
 }
