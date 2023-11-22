@@ -630,7 +630,59 @@ textarea {
   border-radius: 60px;
   padding-top: 34px;
   padding-bottom: 34px;
-  background: linear-gradient(#f7e0a7, #ffc022);
+  background: #ffdb80;
+  -webkit-backdrop-filter: blur(250px);
+          backdrop-filter: blur(250px);
+}
+
+.why-we-do-it-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: linear-gradient(180deg, #fefc9e -47.89%, #fdbfa3 126.42%);
+}
+
+.why-we-do-it-section-items-img-1 {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: linear-gradient(133deg, #2ea3f2 -3.48%, #a651fb 130.9%);
+}
+
+.why-we-do-it-section-items-img-2 {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 800px;
+  background: linear-gradient(66deg, #fe6f2d -10.45%, #ffd059 76.78%);
+}
+
+.why-we-do-it-section-items-img-3 {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 800px;
+  background: linear-gradient(76deg, #828cde -12.62%, #00b8c3 103.26%);
+}
+
+.why-we-do-it-section-items-img-4 {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 800px;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 185, 175, 0.3) -3.89%,
+      #a651fb 94.34%
+    );
 }
 
 .fixed {
@@ -684,6 +736,10 @@ textarea {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-\[60px\] {
+  margin-bottom: 60px;
 }
 
 .mt-5 {
@@ -841,6 +897,10 @@ textarea {
 
 .gap-y-7 {
   row-gap: 1.75rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .overflow-hidden {
@@ -1168,8 +1228,28 @@ textarea {
   position: relative;
 }
 
+.child\:flex > * {
+  display: flex;
+}
+
+.child\:w-\[280px\] > * {
+  width: 280px;
+}
+
 .child\:w-\[300px\] > * {
   width: 300px;
+}
+
+.child\:flex-col > * {
+  flex-direction: column;
+}
+
+.child\:items-center > * {
+  align-items: center;
+}
+
+.child\:gap-6 > * {
+  gap: 1.5rem;
 }
 
 .child\:rounded-\[20px\] > * {
