@@ -140,3 +140,9 @@ for (let i = 0; i < Math.ceil(fakeDB.usersQuestions.length / 3); i++) {
     pagesBtns
   );
 }
+
+let defaultActivePage = $.querySelector(
+  `.footer__question-items-page-wrapper span`
+);
+
+defaultActivePage.classList.add(`bg-white`);
