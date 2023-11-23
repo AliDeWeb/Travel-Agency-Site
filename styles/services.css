@@ -787,6 +787,10 @@ video {
   width: 85%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1008,6 +1012,10 @@ video {
 
 .placeholder-opacity-30::placeholder {
   --tw-placeholder-opacity: 0.3;
+}
+
+.will-change-transform {
+  will-change: transform;
 }
 
 .hover\:bottom-2:hover {
