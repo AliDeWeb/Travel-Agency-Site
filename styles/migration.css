@@ -756,12 +756,24 @@ textarea {
   margin-bottom: 40px;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mb-\[60px\] {
   margin-bottom: 60px;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-5 {
@@ -770,14 +782,6 @@ textarea {
 
 .mt-\[14\.5px\] {
   margin-top: 14.5px;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .line-clamp-2 {
@@ -878,10 +882,6 @@ textarea {
   width: 100%;
 }
 
-.w-\[400px\] {
-  width: 400px;
-}
-
 .min-w-\[380px\] {
   min-width: 380px;
 }
@@ -896,6 +896,10 @@ textarea {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-col {
@@ -1100,6 +1104,11 @@ textarea {
   padding-bottom: 1.25rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -1112,6 +1121,10 @@ textarea {
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .text-center {
@@ -1191,10 +1204,6 @@ textarea {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#\] {
-  color: #;
 }
 
 .underline {
@@ -1459,15 +1468,15 @@ textarea {
     margin-top: 0px;
   }
 
-  .xl\:flex {
-    display: flex;
-  }
-
   .xl\:w-\[400px\] {
     width: 400px;
   }
 
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:child\:w-1\/2 > * {
+    width: 50%;
   }
 }
