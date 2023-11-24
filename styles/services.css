@@ -534,6 +534,26 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+/* all pages have to do  */
+
+:root{
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar{
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #828cde;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #fff;
+  border-radius: 5px;
+}
+
 #main-container{
   background-image: linear-gradient(to bottom, #828CDE, #6D31D0);
 }
