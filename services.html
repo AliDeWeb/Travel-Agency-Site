@@ -11,12 +11,12 @@
 
     <!-- header -->
     <div class="bg-[#53269D] text-white w-full p-4">
-        <div class="w-[85%] m-auto flex items-center justify-between">
-            <section class="border-2 rounded-sm border-white flex items-center justify-center flex-col">
+        <div id="header" class="w-[85%] m-auto flex items-center justify-between">
+            <section id="pam-container" class="border-2 rounded-sm border-white flex items-center justify-center flex-col">
                 <h1 class="font-black text-4xl tracking-[4px]">PAM</h1>
                 <p class="text-[15px] font-medium">CONSULTING</p>
             </section>
-            <section class="flex items-center justify-center">
+            <section id="sec-middle-head" class="flex items-center justify-center">
                 <a class="mx-8" href="#">HOME</a>
                 <a class="mx-8" href="#">ABOUT US</a>     
                 <a class="mx-3" href="#">
@@ -27,9 +27,15 @@
                 <a class="mx-8" href="#">MIGRATION</a>
                 <a class="mx-8" href="#">CONTACT US</a>
             </section>
-            <section>
-                <a class="bg-[#FFDB80] text-[#53269D] rounded-3xl px-6 py-3 font-medium" href="#">Get in touch</a>
+
+            <section>   
+                <a id="a-get-touch" class="bg-[#FFDB80] text-[#53269D] rounded-3xl px-6 py-3 font-medium " href="#">Get in touch</a>
             </section>
+            <svg id="svg_menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-10 h-10 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
         </div>
     </div>
 
@@ -44,10 +50,10 @@
         </section>
 
         
-        <section class=" h-[66vh] flex items-center justify-center ">
-            <div class="grid grid-cols-3">
+        <section id="grid-container" class=" h-[66vh] flex items-center justify-center ">
+            <div id="grid-items" class="flex items-center justify-center">
 
-                <div class="bg-white mx-4 w-[450px] h-[60vh] rounded-3xl flex items-center justify-start flex-col">
+                <div id="first-item-main" class="bg-white mx-4 w-[450px] h-[60vh] rounded-3xl flex items-center justify-start flex-col">
                     <img class="w-full h-[31vh]" src="./files/imgs/services_imgs/services_1.png" alt="">
                     <section class="w-full h-[27vh] flex items-center justify-around flex-col">
                         <div class="text-[#434364] flex items-center justify-center flex-col">
@@ -59,7 +65,7 @@
                     </section>
                 </div>
 
-                <div class="bg-white mx-4 w-[450px] h-[60vh] rounded-3xl flex items-center justify-start flex-col">
+                <div id="second-item-main" class="bg-white mx-4 w-[450px] h-[60vh] rounded-3xl flex items-center justify-start flex-col">
                     <img class="w-full h-[31vh]" src="./files/imgs/services_imgs/services_2.png" alt="">
                     <section class="w-full h-[27vh] flex items-center justify-around flex-col">
                         <div class="text-[#434364] flex items-center justify-center flex-col">
@@ -71,7 +77,8 @@
                     </section>
                 </div>
 
-                <div class="bg-white mx-4 w-[450px] h-[60vh] rounded-3xl flex items-center justify-start flex-col">
+               
+                <div id="third-item-main" class="bg-white mx-4 w-[450px] h-[60vh] rounded-3xl flex items-center justify-start flex-col">
                     <img class="w-full h-[31vh]" src="./files/imgs/services_imgs/services_3.png" alt="">
                     <section class="w-full h-[27vh] flex items-center justify-around flex-col">
                         <div class="text-[#434364] flex items-center justify-center flex-col">
@@ -82,6 +89,7 @@
                         <a class="text-[#53269D] bg-[#FFDB80] px-6 py-3 rounded-3xl font-bold" href="#">Find Out More</a>
                     </section>
                 </div>
+               
 
             </div>
         </section>
@@ -92,8 +100,8 @@
     <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- footer_sercvices -->
 
-    
-    <div class=" bg-[#828CDE] w-full h-[102px] flex justify-around items-center">
+
+    <div id="footer-container" class=" bg-[#828CDE] w-full h-[102px] flex justify-around items-center">
         <section></section>
         <section>
             <p class="text-white">© 2022 PAM Consulting. All rights reserved | Disclaimer | Privacy poilcy</p>
