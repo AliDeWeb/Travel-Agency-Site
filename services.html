@@ -17,30 +17,48 @@
                 <p class="text-[15px] font-medium">CONSULTING</p>
             </section>
             <section id="sec-middle-head" class="flex items-center justify-center">
-                <a class="mx-8 hover:border-b-2 border-[#FFDB80]" href="#">HOME</a>
-                <a class="mx-8 hover:border-b-2 border-[#FFDB80]" href="#">ABOUT US</a>     
-                <a class="mx-3 hover:border-b-2 border-[#FFDB80]" href="#">
-                    <a class="border-b-2  hover:border-b-2 border-[#FFDB80]" href="#">SERVICES</a>
+                <a class="mx-8 hover:border-b-2 border-[#FFDB80] rounded-md" href="#">HOME</a>
+                <a class="mx-8 hover:border-b-2 border-[#FFDB80] rounded-md" href="#">ABOUT US</a>     
+                <a class="mx-3 hover:border-b-2 border-[#FFDB80] rounded-md" href="#">
+                    <a class=" hover:border-b-2 border-[#FFDB80] border-b-2 rounded-md" href="#">SERVICES</a>
                     <img class="mr-6 pl-1" src="./files/imgs/services_imgs/arrow_down_services.png" alt="">
                 </a>
-                <a class="mx-8 hover:border-b-2 border-[#FFDB80]" href="#">INVEST IN CYPRUS</a>
-                <a class="mx-8 hover:border-b-2 border-[#FFDB80]" href="#">MIGRATION</a>
-                <a class="mx-8 hover:border-b-2 border-[#FFDB80]" href="#">CONTACT US</a>
+                <a class="mx-8 hover:border-b-2 border-[#FFDB80] rounded-md" href="#">INVEST IN CYPRUS</a>
+                <a class="mx-8 hover:border-b-2 border-[#FFDB80] rounded-md" href="#">MIGRATION</a>
+                <a class="mx-8 hover:border-b-2 border-[#FFDB80] rounded-md" href="#">CONTACT US</a>
             </section>
 
             <section>   
                 <a id="a-get-touch" class="bg-[#FFDB80] text-[#53269D] rounded-3xl px-6 py-3 font-medium " href="#">Get in touch</a>
             </section>
-            <svg id="svg_menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-10 h-10 hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+
+            <a id="svg-container-a" href="#">
+                <svg id="svg_menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-10 h-10 hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </a>
+
+          
 
         </div>
     </div>
 
     
     <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- hamberger-menu -->
+      <div id="nav-container" style="direction: rtl;" class="relative hidden">
+        <nav id="nav" class="absolute z-[999] w-[200px] h-[300px] text-white leading-10 bg-[#53269D] rounded-bl-2xl flex flex-col items-start pr-8 p-3 mr-[100px]">
+            <a href="#" class="hover:border-b-2 rounded-sm border-b-[#FFDB80]">HOME</a>
+            <a href="#" class="hover:border-b-2 rounded-sm border-b-[#FFDB80]">ABOUT US</a>
+            <a href="#" class="border-b-2 rounded-sm border-b-[#FFDB80]">SERVICES</a>
+            <a href="#" class="hover:border-b-2 rounded-sm border-b-[#FFDB80]">INVEST IN CYPRUS</a>
+            <a href="#" class="hover:border-b-2 rounded-sm border-b-[#FFDB80]">MIGRATION</a>
+            <a href="#" class="hover:border-b-2 rounded-sm border-b-[#FFDB80]">CONTACT US</a>
+        </nav>
+    </div>
+
+
     <!-- main_sercvices -->
     <div id="main-container" class=" w-full h-[80vh]">
 

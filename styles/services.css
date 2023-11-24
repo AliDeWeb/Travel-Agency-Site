@@ -627,6 +627,18 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-\[999\] {
+  z-index: 999;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -648,6 +660,10 @@ video {
 
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.mr-\[100px\] {
+  margin-right: 100px;
 }
 
 .flex {
@@ -672,6 +688,10 @@ video {
 
 .h-\[27vh\] {
   height: 27vh;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .h-\[31vh\] {
@@ -702,6 +722,10 @@ video {
   width: 24rem;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .w-\[450px\] {
   width: 450px;
 }
@@ -716,6 +740,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -746,6 +774,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
 }
@@ -754,16 +786,21 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-bl-2xl {
+  border-bottom-left-radius: 1rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-\[\#FFDB80\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 219 128 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -771,13 +808,9 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-\[\] {
-  border-color: ;
-}
-
-.border-\[\#FFDB80\] {
+.border-b-\[\#FFDB80\] {
   --tw-border-opacity: 1;
-  border-color: rgb(255 219 128 / var(--tw-border-opacity));
+  border-bottom-color: rgb(255 219 128 / var(--tw-border-opacity));
 }
 
 .bg-\[\#53269D\] {
@@ -800,6 +833,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -820,6 +857,10 @@ video {
 
 .pl-1 {
   padding-left: 0.25rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-center {
@@ -854,6 +895,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
 }
 
 .tracking-\[4px\] {
@@ -920,9 +965,7 @@ video {
   }
 }
 
-.hover\:border:hover {
-  border-width: 1px;
-}
+/* hamberger menu */
 
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
@@ -932,4 +975,5 @@ video {
   --tw-text-opacity: 1;
   color: rgb(83 38 157 / var(--tw-text-opacity));
 }
+
 
