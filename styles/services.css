@@ -858,6 +858,24 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@font-face {
+  font-family: "avenirNext";
+
+  src: url("../files/fonts/avenir_next/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "avenirNext-bold";
+
+  src: url("../files/fonts/avenir_next/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Montserrat-semi";
+
+  src: url("../files/fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+
 @media screen and (max-width:495px) {
   #first-item-main{
     width: 350px;
