@@ -662,8 +662,8 @@ video {
   margin-right: 1.5rem;
 }
 
-.mr-\[100px\] {
-  margin-right: 100px;
+.mr-\[65px\] {
+  margin-right: 65px;
 }
 
 .flex {
@@ -952,6 +952,10 @@ video {
   #third-item-main{
     width: 350px;
     height: 55vh;
+  }
+
+  #a-get-touch{
+    display: none;
   }
 }
 
