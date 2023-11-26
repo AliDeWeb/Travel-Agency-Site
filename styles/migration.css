@@ -1177,6 +1177,10 @@ textarea {
   line-height: 1.75rem;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .text-\[\#434364\] {
   --tw-text-opacity: 1;
   color: rgb(67 67 100 / var(--tw-text-opacity));
@@ -1269,6 +1273,10 @@ textarea {
 .child\:text-base > * {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.child\:uppercase > * {
+  text-transform: uppercase;
 }
 
 .child\:text-\[\#434364\] > * {
