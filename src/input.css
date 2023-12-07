@@ -7,3 +7,26 @@
     background: linear-gradient(90deg, #53269d 0%, #6d31d0 100.2%);
   }
 }
+@layer components {
+  .bar {
+    transition: all 0.3s ease-out;
+  }
+  .active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+@layer components {
+  .sliding-menu {
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+  .open-slide {
+    transform: translateX(0%);
+  }
+}
