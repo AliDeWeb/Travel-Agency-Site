@@ -556,11 +556,15 @@ video {
 
 .sliding-menu {
   transform: translateX(100%);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.fixed {
-  position: fixed;
+.open-slide {
+  transform: translate(0);
+}
+
+.absolute {
+  position: absolute;
 }
 
 .right-0 {
@@ -591,6 +595,10 @@ video {
   display: none;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-3\/5 {
   height: 60%;
 }
@@ -599,8 +607,16 @@ video {
   height: 120px;
 }
 
+.h-\[160px\] {
+  height: 160px;
+}
+
 .h-\[2px\] {
   height: 2px;
+}
+
+.h-\[530px\] {
+  height: 530px;
 }
 
 .h-full {
@@ -625,6 +641,11 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.translate-y-\[-17px\] {
+  --tw-translate-y: -17px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -683,9 +704,30 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/public\/files\/imgs\/investment_imgs\/first\.jpg\'\)\] {
+  background-image: url('/public/files/imgs/investment_imgs/first.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .px-10 {
@@ -710,6 +752,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .font-light {
@@ -749,6 +795,15 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.phone-gradient {
+  background: linear-gradient(
+      180deg,
+      #fff 62.06%,
+      rgba(255, 255, 255, 0.77) 78.73%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -764,7 +819,40 @@ video {
     display: none;
   }
 
+  .laptop\:h-auto {
+    height: auto;
+  }
+
+  .laptop\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .laptop\:w-\[380px\] {
+    width: 380px;
+  }
+
   .laptop\:w-full {
     width: 100%;
+  }
+
+  .laptop\:flex-row {
+    flex-direction: row;
+  }
+
+  .laptop\:bg-contain {
+    background-size: contain;
+  }
+
+  .laptop\:text-\[39px\] {
+    font-size: 39px;
+  }
+
+  .laptop\:laptop-gradient {
+    background: linear-gradient(
+      -270deg,
+      #fff 62.06%,
+      rgba(255, 255, 255, 0.77) 71.73%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 }

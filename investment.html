@@ -5,42 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Investment</title>
     <link rel="stylesheet" href="./styles/investment.css" />
-    <div class="flex justify-between items-center my-bg h-[120px] px-10">
-      <div
-        class="flex w-5/6 nav-bar laptop:w-full h-full justify-between items-center"
-      >
-        <img
-          class="h-3/5"
-          src="./files/imgs/investment_imgs/logo.png"
-          alt="palm logo"
-        />
-        <nav
-          class="laptop:flex justify-center text-white font-thin list-none space-x-6 hidden"
-        >
-          <a href="#"><li>HOME</li></a>
-          <a href="#"><li>ABOUT US</li></a>
-          <a href="#"><li>SERVICES</li></a>
-          <a href="#"><li>INVEST IN CYPRUS</li></a>
-          <a href="#"><li>MIGRATION</li></a>
-          <a href="#"><li>CONTACT US</li></a>
-        </nav>
-        <a href="#">
-          <span
-            class="bg-[#FFDB80] px-4 py-2 rounded-[30px] text-[#6D31D0] capitalize"
-            >get in touch</span
-          >
-        </a>
-      </div>
-      <section class="ham-menu laptop:hidden cursor-pointer">
-        <span class="bar block w-9 bg-gray-200 h-[2px] mb-2 rounded-lg"></span>
-        <span class="bar block w-9 bg-gray-200 h-[2px] mb-2 rounded-lg"></span>
-        <span class="bar block w-9 bg-gray-200 h-[2px] rounded-lg"></span>
-      </section>
-    </div>
   </head>
-  <body>
+  <body class="overflow-hidden">
+    <header>
+      <div class="flex justify-between items-center my-bg h-[120px] px-10">
+        <div
+          class="flex w-5/6 nav-bar laptop:w-full h-full justify-between items-center"
+        >
+          <img
+            class="h-3/5"
+            src="./files/imgs/investment_imgs/logo.png"
+            alt="palm logo"
+          />
+          <nav
+            class="laptop:flex justify-center text-white font-thin list-none space-x-6 hidden"
+          >
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>ABOUT US</li></a>
+            <a href="#"><li>SERVICES</li></a>
+            <a href="#"><li>INVEST IN CYPRUS</li></a>
+            <a href="#"><li>MIGRATION</li></a>
+            <a href="#"><li>CONTACT US</li></a>
+          </nav>
+          <a href="#">
+            <span
+              class="bg-[#FFDB80] px-4 py-2 rounded-[30px] text-[#6D31D0] capitalize"
+              >get in touch</span
+            >
+          </a>
+        </div>
+        <section class="ham-menu laptop:hidden cursor-pointer">
+          <span
+            class="bar block w-9 bg-gray-200 h-[2px] mb-2 rounded-lg"
+          ></span>
+          <span
+            class="bar block w-9 bg-gray-200 h-[2px] mb-2 rounded-lg"
+          ></span>
+          <span class="bar block w-9 bg-gray-200 h-[2px] rounded-lg"></span>
+        </section>
+      </div>
+    </header>
     <div
-      class="sliding-menu shadow-md shadow-slate-700 z-50 overflow-hidden laptop:hidden font-light py-2 h-screen flex flex-col w-60 bg-slate-50 items-center fixed right-0"
+      class="sliding-menu shadow-md shadow-slate-700 z-50 overflow-hidden laptop:hidden font-light py-2 h-screen flex flex-col w-60 bg-slate-50 items-center absolute right-0"
     >
       <a
         href="#"
@@ -72,6 +78,21 @@
         class="hover:scale-110 uppercase block w-full text-center py-5 border-b"
         >contact us</a
       >
+    </div>
+    <div id="page-title">
+      <section
+        class="bg-[url('/public/files/imgs/investment_imgs/first.jpg')] bg-gray-300 bg-no-repeat bg-cover laptop:bg-contain bg-right h-[530px] w-full flex laptop:flex-row flex-col"
+      >
+        <div
+          class="laptop:w-2/3 laptop:laptop-gradient flex justify-center items-center phone-gradient w-full h-[160px] laptop:h-auto"
+        >
+          <h1
+            class="translate-y-[-17px] capitalize laptop:text-[39px] h-16 laptop:w-[380px] text-[25px]"
+          >
+            investment opportunities
+          </h1>
+        </div>
+      </section>
     </div>
     <script src="./scripts/investment.js"></script>
   </body>

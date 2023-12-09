@@ -24,9 +24,27 @@
 @layer components {
   .sliding-menu {
     transform: translateX(100%);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .open-slide {
-    transform: translateX(0%);
+    transform: translate(0);
+  }
+}
+@layer utilities {
+  .laptop-gradient {
+    background: linear-gradient(
+      -270deg,
+      #fff 62.06%,
+      rgba(255, 255, 255, 0.77) 71.73%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .phone-gradient {
+    background: linear-gradient(
+      180deg,
+      #fff 62.06%,
+      rgba(255, 255, 255, 0.77) 78.73%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 }
