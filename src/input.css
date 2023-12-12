@@ -23,11 +23,12 @@
 }
 @layer components {
   .sliding-menu {
-    transform: translateX(100%);
+    top: 0;
+    right: -243px;
     transition: all 0.5s ease-in-out;
   }
   .open-slide {
-    transform: translate(0);
+    right: 0;
   }
 }
 @layer utilities {
