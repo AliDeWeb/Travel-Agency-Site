@@ -34,6 +34,8 @@
             >
           </a>
         </div>
+        
+        <!--hamburger menu button-->
         <section class="ham-menu laptop:hidden cursor-pointer">
           <span
             class="bar block w-9 bg-gray-200 h-[2px] mb-2 rounded-lg"
@@ -46,6 +48,7 @@
       </div>
     </header>
     <div id="blur" class="w-full h-screen backdrop-blur-sm fixed top-0 z-[49] hidden laptop:hidden "></div>
+    <!--My sliding menu-->
     <div
       class="sliding-menu shadow-md shadow-slate-700 z-50 laptop:hidden font-light py-2 h-full flex flex-col w-60 bg-slate-50 items-center fixed
       overflow-hidden"
@@ -83,10 +86,10 @@
     </div>
     <div id="page-title">
       <section
-        class="bg-[url('/public/files/imgs/investment_imgs/first.jpg')] bg-gray-300 bg-no-repeat bg-cover laptop:bg-contain bg-right h-[530px] w-full flex laptop:flex-row flex-col"
+        class="bg-[url('/public/files/imgs/investment_imgs/first.jpg')] bg-gray-300 bg-no-repeat laptop:bg-auto bg-cover bg-right h-[530px] w-full flex laptop:flex-row flex-col"
       >
         <div
-          class="laptop:w-2/3 laptop:laptop-gradient flex justify-center items-center phone-gradient w-full h-[160px] laptop:h-auto"
+          class="laptop:w-[60%] laptop:laptop-gradient flex justify-center items-center phone-gradient w-full h-[160px] laptop:h-auto"
         >
           <h1
             class="translate-y-[-17px] capitalize laptop:text-[39px] h-16 laptop:w-[380px] text-[25px]"
@@ -101,9 +104,10 @@
 
       <!--first text-->
       <section class="flex laptop:flex-row flex-col-reverse pb-[40px]">
+        <div class="bg-white w-[80px] opacity-60 h-[500px] absolute z-[5] left-[556px] hidden laptop:block"></div>
         <img class="laptop:w-[580px] laptop:h-[500px] w-full" src="./files/imgs/investment_imgs/second.jpg" alt="" />
-        <div id="text1" class="laptop:ml-8 mb-10 text-[1.2vw]">
-          <h1 class="uppercase text-[2vw] font-semibold">
+        <div id="text1" class="laptop:ml-8 mb-10 text-[2vw] laptop:text-[1.2vw]">
+          <h1 class="uppercase text-[2.3vw] font-semibold">
             Investing in Real Estate
           </h1>
           <br/>
@@ -133,9 +137,10 @@
 
       <!--second text-->
       <section class="flex laptop:flex-row-reverse flex-col-reverse py-[40px]">
+        <div class="bg-white w-[80px] opacity-60 h-[500px] absolute z-[5] right-[556px] hidden laptop:block"></div>
         <img class="laptop:w-[580px] laptop:h-[500px] w-full" src="./files/imgs/investment_imgs/third.jpg" alt="" />
-        <div id="text2" class="laptop:mr-8 mb-10 text-[1.2vw]">
-          <h2 class="uppercase font-semibold text-[2vw]">Investing in Yachts</h2>
+        <div id="text2" class="laptop:mr-8 mb-10 text-[2vw] laptop:text-[1.2vw]">
+          <h2 class="uppercase font-semibold text-[2.3vw]">Investing in Yachts</h2>
           <br />
           <p>
             One of the perks of living on an island that is sunny all year round,
@@ -174,9 +179,10 @@
 
       <!--Third Text-->
       <section class="flex laptop:flex-row flex-col-reverse py-[40px]">
+        <div class="bg-white w-[80px] opacity-60 h-[500px] absolute z-[5] left-[556px] hidden laptop:block"></div>
         <img class="laptop:w-[580px] laptop:h-[500px] w-full" src="./files/imgs/investment_imgs/fourth.jpg" alt="">
-        <div id="text3" class="laptop:ml-8 mb-10 text-[1.2vw]">
-          <h1 class="font-semibold text-[2vw] uppercase">Starting a Business</h1><br>
+        <div id="text3" class="laptop:ml-8 mb-10 text-[2vw] laptop:text-[1.2vw]">
+          <h1 class="font-semibold text-[2.3vw] uppercase">Starting a Business</h1><br>
           <p>Have you ever envisioned starting your own business? Being a business owner means being in charge of your own finances and decisions. One of the first steps to consider when building your business is the location of your company. This is the place where you will be investing your time, money, and motivation. For this reason, it is crucial to do your research regarding your target market, local tax implications, and much more. <br><br>Cyprus may be a small island, but it offers a huge variety of business opportunities. With a free-market, service-based economy and high household incomes, the country has a stable and modern economy. Millions of international investors have seized the power of business establishment in Cyprus. <br><br>These are some of the main reasons to start your own business in Cyprus: <br> <ul class="list-disc ml-4">
             <li>One of Europe's lowest corporation tax rates</li>
             <li>Many investment opportunities</li>
@@ -189,6 +195,51 @@
         </div>
       </section>
     </main>
+    <!--creating services box-->
+    <section id="service-box" class="py-[80px] desktop:px-0 flex justify-evenly items-center flex-wrap services-bg w-full gap-10" id="services">
+      <h2 class=" w-full text-center capitalize font-semibold text-[36px]">how we can help</h2>
+      <div class="flex flex-wrap w-10/12 tablet:w-[75%] desktop:w-10/12 justify-evenly items-start">
+        <div class="service-item w-[180px] tablet:w-[280px] desktop:w-[180px]">
+          <div class="service-logo p-[30px] listen-bg">
+            <img src="./files/imgs/investment_imgs/listen.png" alt="ear">
+          </div>
+          <span class="w-full capitalize text-purple-800 text-center font-bold">we listen</span>
+          <h5 class="tracking-tighter w-full text-center text-[16px]">You come to us with your goals, and we make sure to understand your needs to the fullest.</h5>
+        </div>
+        <div class="service-item w-[180px] tablet:w-[280px] desktop:w-[180px]">
+          <div class="service-logo p-[25px] plan-bg">
+            <img src="./files/imgs/investment_imgs/plan.png" alt="">
+          </div>
+          <span class="w-full capitalize text-purple-800 text-center font-bold">we plan</span>
+          <h5 class="tracking-tighter w-full text-center font-[16px]">We put all our efforts into creating the perfect investment plan for your family and business.</h5>
+        </div>
+        <div class="service-item w-[180px] tablet:w-[280px] desktop:w-[180px]">
+          <div class="service-logo p-[25px] recommend-bg">
+            <img src="./files/imgs/investment_imgs/recommend.png" alt="">
+          </div>
+          <span class="w-[200px] capitalize text-purple-800 text-center font-bold text[20px]">we recommend</span>
+          <h5 class="tracking-tighter w-full text-center">We give you the opportunity to consider a variety of options so you can have a better understanding of investing in Cyprus.</h5>
+        </div>
+        <div class="service-item w-[180px] tablet:w-[280px] desktop:w-[180px]">
+          <div class="service-logo p-[25px] provide-bg">
+            <img src="./files/imgs/investment_imgs/provide.png" alt="">
+          </div>
+          <span class="w-full capitalize text-purple-800 text-center font-bold">we provide</span>
+          <h5 class="w-full tracking-tighter text-center">We offer you our services based on trustworthy agreements with renowned partners in Cyprus.</h5>
+        </div>
+        <div class="service-item w-[180px] tablet:w-[280px] desktop:w-[180px]">
+          <div class="service-logo p-[30px] support-bg">
+            <img src="./files/imgs/investment_imgs/support.png" alt="">
+          </div>
+          <span class="w-full capitalize text-purple-800 text-center font-bold">we support</span>
+          <h5 class="tracking-tighter text-center self-stretch">Once you decide on your investment plan, we remain by your side to make sure everything meets your expectations.</h5>
+        </div>
+      </div>
+    </section> <!--service box done!-->
+    <footer>
+      
+    </footer>
+
     <script src="./scripts/investment.js"></script>
   </body>
 </html>
