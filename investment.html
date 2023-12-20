@@ -34,7 +34,7 @@
             >
           </a>
         </div>
-        
+
         <!--hamburger menu button-->
         <section class="ham-menu laptop:hidden cursor-pointer">
           <span
@@ -195,6 +195,7 @@
         </div>
       </section>
     </main>
+
     <!--creating services box-->
     <section id="service-box" class="py-[80px] desktop:px-0 flex justify-evenly items-center flex-wrap services-bg w-full gap-10" id="services">
       <h2 class=" w-full text-center capitalize font-semibold text-[36px]">how we can help</h2>
@@ -236,8 +237,50 @@
         </div>
       </div>
     </section> <!--service box done!-->
-    <footer>
-      
+
+    <footer class="w-full">
+    <!--contact us box-->  
+      <section id="contact-us" class="w-full contact-us-bg py-[80px] flex flex-col gap-[60px] items-center">
+        <h2 class="text-2xl font-semibold text-center uppercase">contact us</h2>
+        <div class="w-[340px] flex flex-col gap-[30px] items-center">
+          <div id="phone" class="flex-col gap-2 items-center flex">
+            <div class="w-[28px] h-[28px] rounded-full p-[6px] phone-bg">
+              <img src="./files/imgs/investment_imgs/phone.png" alt="">
+            </div>
+            <span class="purple-text font-semibold text-[20px]">+357 9056759</span>
+          </div>
+          <div id="e-mail" class="flex-col gap-2 items-center flex">
+            <div class="w-[28px] h-[28px] rounded-full p-[6px] phone-bg">
+              <img src="./files/imgs/investment_imgs/email.png" alt="">
+            </div>
+            <span class="purple-text font-semibold text-[20px]">contact@pamrelocation.com</span>
+          </div>
+        </div>
+              <!--contact us inputs-->
+        <div id="inputs" class="min-w-[90%] tablet:min-w-[55%] desktop:min-w-[80%] min-h-[650px] input-bg rounded-[60px] flex flex-col justify-around items-center backdrop-blur-md py-[34px]">
+          <h3 class="text-2xl font-semibold text-center uppercase">send inquiry</h3>
+          <form class="grid grid-rows-[10] tablet:grid-cols-2 gap-2 w-[95%] tablet:min-w-[40%] desktop:max-w-[50%] py-5 tablet:p-0 ">
+            <input class="rounded-3xl p-3" type="text" placeholder="Your Name">
+            <input class="rounded-3xl p-3" type="email" placeholder="Email">
+            <input class="rounded-3xl p-3" type="text" placeholder="Subject">
+            <input class="rounded-3xl p-3" type="tel" placeholder="Phone">
+            <textarea class="rounded-3xl resize-none p-3 tablet:row-start-3 tablet:row-end-10 tablet:col-start-1 tablet:col-end-3 h-52" placeholder="Your Text"></textarea>
+          </form>
+          <form class="flex gap-3 w-[95%] tablet:min-w-[40%] desktop:max-w-[50%] items-start justify-center pb-5 tablet:p-0">
+            <input id="checkbox" class="w-[28px] h-[28px] rounded-sm appearance-none border border-white hover:cursor-pointer accent-black" type="checkbox">
+            <p class="w-[88%] tablet:w-[90%] text-[13px] capitalize">By clicking “Submit button” you accept our <a class="purple-text hover:underline" href="#">Terms & Conditions</a> and have read our <a class="purple-text hover:underline" href="#">Privacy Policy</a> and <a class="purple-text hover:underline" href="#">Disclaimer</a>
+            </p>
+          </form>
+          <input class="bg-[#FFDB80] purple-text font-semibold h-[60px] rounded-[30px] px-10 cursor-pointer shadow-lg" type="submit">
+        </div>
+      </section>
+      <!--FAQ section creation-->
+      <section id="FAQ" class="flex flex-col faq-bg">
+        <h4 class="text-xl text-center text-white font-bold uppercase">frequently asked questions</h4>
+        <div>
+
+        </div>
+      </section>      
     </footer>
 
     <script src="./scripts/investment.js"></script>

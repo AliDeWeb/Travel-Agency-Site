@@ -20,3 +20,6 @@ blurry.addEventListener("click", function () {
 document.addEventListener("keydown", function (keyPress) {
   keyPress.key === "Escape" && closeMenu();
 });
+document.querySelector("#checkbox").addEventListener("click", function () {
+  this.classList.toggle("appearance-none");
+});
