@@ -23,3 +23,44 @@ document.addEventListener("keydown", function (keyPress) {
 document.querySelector("#checkbox").addEventListener("click", function () {
   this.classList.toggle("appearance-none");
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".swiper-container");
+  const wrapper = document.querySelector(".swiper-wrapper");
+  const slides = document.querySelectorAll(".swiper-slide");
+  const pagination = document.querySelector(".swiper-pagination");
+  const dots = [];
+
+  let currentIndex = 0;
+
+  function updateSlider() {
+    const translateValue = currentIndex * 390 + currentIndex * 22;
+    wrapper.style.transform = `translateX(-${translateValue}px`;
+    updatePagination();
+  }
+
+  function updatePagination() {
+    dots.forEach((dot, index) => {
+      if (index === currentIndex) {
+        dot.classList.add("active");
+      } else {
+        dot.classList.remove("active");
+      }
+    });
+  }
+
+  function createPaginationDots() {
+    for (let i = 0; i < slides.length - 1; i++) {
+      const dot = document.createElement("div");
+      dot.classList.add("swiper-pagination-dot");
+      dot.addEventListener("click", () => {
+        currentIndex = i;
+        updateSlider();
+      });
+      pagination.appendChild(dot);
+      dots.push(dot);
+    }
+    updatePagination();
+  }
+
+  createPaginationDots();
+});
