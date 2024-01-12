@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/public/styles/contact_us.css" />
+  </head>
+  <br>
+    <header class="h-[120px] w-full my-bg flex items-center">
+      <div
+        class="flex laptop:w-[90%] w-[75%] h-full mx-auto items-center justify-between"
+      >
+        <a class="block phone:w-[120px] phone:h-[80px] w-[90px] h-fit" href="#"
+          ><img src="/public/files/imgs/contact_us_imgs/logo.png" alt=""
+        /></a>
+        <nav
+          class="uppercase text-white w-[630px] laptop:flex justify-between hidden"
+        >
+          <a href="#">home</a>
+          <a href="#">About us</a>
+          <a href="#">Services</a>
+          <a href="#">Invest in cyprus</a>
+          <a href="#">migration</a>
+          <a href="#">Contuct us</a>
+        </nav>
+        <button
+          class="cursor-pointer capitalize font-[montserat] bg-[#FFDB80] purple-text px-3 py-1 rounded-full hidden phone:block"
+        >
+          get in touch
+        </button>
+      </div>
+      <section class="ham-menu laptop:hidden cursor-pointer mr-10">
+        <span class="bar block w-9 bg-gray-200 h-[2px] mb-2 rounded-lg"></span>
+        <span class="bar block w-9 bg-gray-200 h-[2px] mb-2 rounded-lg"></span>
+        <span class="bar block w-9 bg-gray-200 h-[2px] rounded-lg"></span>
+      </section>
+    </header>
+    <div
+      id="blur"
+      class="w-full h-screen backdrop-blur-sm fixed top-0 z-[49] hidden laptop:hidden"
+    ></div>
+    <section
+      class="sliding-menu shadow-md shadow-slate-700 z-50 laptop:hidden font-light py-2 h-full flex flex-col w-60 bg-slate-50 items-center fixed overflow-hidden"
+    >
+      <a
+        href="#"
+        class="hover:scale-110 uppercase w-full text-center py-5 border-b inline-block duration-200"
+        >home</a
+      >
+      <a
+        href="#"
+        class="hover:scale-110 uppercase block w-full text-center py-5 border-b duration-200"
+        >about us</a
+      >
+      <a
+        href="#"
+        class="hover:scale-110 uppercase block w-full text-center py-5 border-b duration-200"
+        >services</a
+      >
+      <a
+        href="#"
+        class="hover:scale-110 uppercase block w-full text-center py-5 border-b duration-200"
+        >invest in cyprus</a
+      >
+      <a
+        href="#"
+        class="hover:scale-110 uppercase block w-full text-center py-5 border-b duration-200"
+        >migration</a
+      >
+      <a
+        href="#"
+        class="hover:scale-110 uppercase block w-full text-center py-5 border-b duration-200"
+        >contact us</a
+      >
+    </section>
+    <section id="contact-box" class="flex flex-col gap-[60px] contact-us-bg items-center py-[80px]">
+      <div class="flex flex-col items-center gap-2"><h1 class="uppercase text-[30px]">contact us</h1> <hr class="w-[380px] h-1 border-0 bg-[#FDBFA3]"></div>
+      <div class="flex flex-col gap-7">
+        <div id="telephone" class="flex flex-col gap-2 items-center">
+          <div class="w-7 h-7 p-1 phone-bg rounded-full "><img src="./files/imgs/contact_us_imgs/phone.png" alt=""></div>
+          <span class="font-semibold font-[montserat]">+357 9056759</span>
+        </div>
+        <div id="e-mail" class="flex flex-col gap-2 items-center">
+          <div class="w-7 h-7 p-1 phone-bg rounded-full "><img src="./files/imgs/contact_us_imgs/e-mail.png" alt=""></div>
+          <span class="font-semibold font-[montserat]">contact@pamrelocation.com</span>
+        </div>
+      </div>
+      <div id="inputs" class="flex flex-col items-center input-bg rounded-[60px] desktop:min-w-[1180px] gap-[20px] py-10">
+        <span class="uppercase text-[27px] font-[avenir-bold]">send inquiry</span>
+        <form class="grid grid-rows-[10] tablet:grid-cols-2 gap-2 w-[95%] tablet:min-w-[40%] desktop:max-w-[50%] py-5 tablet:p-0 ">
+          <input class="rounded-3xl p-3 shadow-lg" type="text" placeholder="Your Name">
+          <input class="rounded-3xl p-3 shadow-lg" type="email" placeholder="Email">
+          <input class="rounded-3xl p-3 shadow-lg" type="text" placeholder="Subject">
+          <input class="rounded-3xl p-3 shadow-lg" type="tel" placeholder="Phone">
+          <textarea class="shadow-lg rounded-3xl resize-none p-3 tablet:row-start-3 tablet:row-end-10 tablet:col-start-1 tablet:col-end-3 h-52" placeholder="Your Text"></textarea>
+        </form>
+        <form class="flex gap-3 w-[95%] tablet:min-w-[40%] desktop:max-w-[50%] items-start justify-center pb-5 tablet:p-0">
+          <input id="checkbox" class="w-[28px] h-[28px] rounded-sm appearance-none border border-white hover:cursor-pointer accent-black" type="checkbox">
+          <p class="w-[88%] tablet:w-[90%] text-[13px] capitalize">By clicking “Submit button” you accept our <a class="purple-text hover:underline" href="#">Terms & Conditions</a> and have read our <a class="purple-text hover:underline" href="#">Privacy Policy</a> and <a class="purple-text hover:underline" href="#">Disclaimer</a>
+          </p>
+        </form>
+        <input class="bg-[#FFDB80] purple-text font-semibold h-[60px] rounded-[30px] px-10 cursor-pointer shadow-lg font-[avenir-bold]" type="submit">
+      </div>
+    </section>
+    <footer class="w-full bg-[#7d87dc] h-[160px] laptop:h-[100px] flex flex-col laptop:flex-row gap-2 text-white justify-center laptop:justify-evenly items-center ">
+      <div class="text-center flex gap-2 flex-wrap justify-center">
+        <h6 class="w-full laptop:w-auto">© 2022 PAM Consulting. All rights reserved</h6>
+        <a class=" laptop:border-l-[1px] pl-2 font-light" href="#">Disclaimer</a>
+        <a class=" border-l-[1px] pl-2 font-light " href="#">Privacy policy</a>
+      </div>
+      <a class="font-light" href="#">Who designed this website?</a>
+    </footer>
+    <script src="/public/scripts/contact_us.js"></script>
+  </body>
+</html>
