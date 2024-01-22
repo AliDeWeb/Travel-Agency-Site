@@ -1044,7 +1044,7 @@ video {
 }
 
 .bg-\[url\(\'\/public\/files\/imgs\/investment_imgs\/first\.jpg\'\)\] {
-  background-image: url('/public/files/imgs/investment_imgs/first.jpg');
+  background-image: url('../files/imgs/investment_imgs/first.jpg');
 }
 
 .bg-cover {
@@ -1358,13 +1358,13 @@ video {
 @font-face {
   font-family: avenir-regular;
 
-  src: url(/public/files/fonts/avenir_next/AvenirNextLTPro-Regular.otf);
+  src: url(../files/fonts/avenir_next/AvenirNextLTPro-Regular.otf);
 }
 
 @font-face {
   font-family: avenir-bold;
 
-  src: url(/public/files/fonts/avenir_next/AvenirNextLTPro-Bold.otf);
+  src: url(../files/fonts/avenir_next/AvenirNextLTPro-Bold.otf);
 }
 
 @font-face {
